@@ -167,12 +167,6 @@
 			console.log ( ' ( map.widthInPixels / 32 ) : ' + ( map.widthInPixels / 32 ) );
 			console.log ( ' ( map.heightInPixels / 32 ) : ' + ( map.heightInPixels / 32 ) );
 
-			console.log ( ' ( map.widthInPixels - window.innerWidth ) : ' + ( map.widthInPixels - window.innerWidth ) );
-			console.log ( ' ( map.heightInPixels - window.innerHeight ) : ' + ( map.heightInPixels - window.innerHeight ) );
-
-			console.log ( ' ( ( map.widthInPixels / 2 ) - ( window.innerWidth / 2 ) ) : ' + ( ( map.widthInPixels / 2 ) - ( window.innerWidth / 2 ) ) );
-			console.log ( ' ( ( map.heightInPixels / 2 ) - ( window.innerHeight / 2 ) ) : ' + ( ( map.heightInPixels / 2 ) - ( window.innerHeight / 2 ) ) );
-
 			// Set the `camera` Dead Zone
 			// this.cameras.main.setDeadzone ( this.__CAMERA_DEADZONE_WIDTH, this.__CAMERA_DEADZONE_HEIGHT );
 
