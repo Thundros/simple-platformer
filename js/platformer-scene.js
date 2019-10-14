@@ -43,9 +43,10 @@
 			// Set whether or not the Player is dead { Default :: false }
 			this.isPlayerDead = false;
 
-			// Create & Draw our Tilemap
+			// Create our Tilemap
 			const map = this.make.tilemap(
 			{
+				// Set the Map's `ID key`
 				key: "map"
 			});
 
@@ -54,9 +55,6 @@
 
 			// Set Camera's DeadZone Height
 			this.__CAMERA_DEADZONE_HEIGHT = ( map.heightInPixels / 2 - __GAME_HEIGHT / 2 );
-
-			console.log ( 'CAMERA DEADZONE WIDTH :: ' + this.__CAMERA_DEADZONE_WIDTH );
-			console.log ( 'CAMERA DEADZONE HEIGHT :: ' + this.__CAMERA_DEADZONE_HEIGHT );
 
 			// Add Tileset to Tilemap
 			const tiles = map.addTilesetImage("0x72-industrial-tileset-32px-extruded", "tiles");
@@ -166,12 +164,6 @@
 
 			console.log ( ' ( map.widthInPixels / 32 ) : ' + ( map.widthInPixels / 32 ) );
 			console.log ( ' ( map.heightInPixels / 32 ) : ' + ( map.heightInPixels / 32 ) );
-
-			console.log ( ' ( map.widthInPixels - window.innerWidth ) : ' + ( map.widthInPixels - window.innerWidth ) );
-			console.log ( ' ( map.heightInPixels - window.innerHeight ) : ' + ( map.heightInPixels - window.innerHeight ) );
-
-			console.log ( ' ( ( map.widthInPixels / 2 ) - ( window.innerWidth / 2 ) ) : ' + ( ( map.widthInPixels / 2 ) - ( window.innerWidth / 2 ) ) );
-			console.log ( ' ( ( map.heightInPixels / 2 ) - ( window.innerHeight / 2 ) ) : ' + ( ( map.heightInPixels / 2 ) - ( window.innerHeight / 2 ) ) );
 
 			// Set the `camera` Dead Zone
 			// this.cameras.main.setDeadzone ( this.__CAMERA_DEADZONE_WIDTH, this.__CAMERA_DEADZONE_HEIGHT );
