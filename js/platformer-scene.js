@@ -56,9 +56,6 @@
 			// Set Camera's DeadZone Height
 			this.__CAMERA_DEADZONE_HEIGHT = ( map.heightInPixels / 2 - __GAME_HEIGHT / 2 );
 
-			console.log ( 'CAMERA DEADZONE WIDTH :: ' + this.__CAMERA_DEADZONE_WIDTH );
-			console.log ( 'CAMERA DEADZONE HEIGHT :: ' + this.__CAMERA_DEADZONE_HEIGHT );
-
 			// Add Tileset to Tilemap
 			const tiles = map.addTilesetImage("0x72-industrial-tileset-32px-extruded", "tiles");
 
