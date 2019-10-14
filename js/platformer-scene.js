@@ -43,9 +43,10 @@
 			// Set whether or not the Player is dead { Default :: false }
 			this.isPlayerDead = false;
 
-			// Create & Draw our Tilemap
+			// Create our Tilemap
 			const map = this.make.tilemap(
 			{
+				// Set the Map's `ID key`
 				key: "map"
 			});
 
