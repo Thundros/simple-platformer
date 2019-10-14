@@ -193,6 +193,10 @@
 		{
 
 			// If the `player` is `dead`, break out of the loop
+			// NOTE : { When the Player dies & restarts, 
+			// Player movement speed doubles }
+			// This needs to be fixed
+
 			if (this.isPlayerDead) return;
 
 			// Otherwise, 
