@@ -30,49 +30,41 @@
 	this.__GAME_SCENES = PlatformerScene;
 	this.__GAME_PHYSICS_DEFAULT = "arcade";
 
-	// Game's Configuration
+		// Game's Configuration
 
 	this.__config = {
 
-		type: this.__PHASER_TYPE, 
-		width: this.__GAME_WIDTH, 
-		height: this.__GAME_HEIGHT, 
-		parent: this.__PHASER_PARENT, 
-		pixelArt: this.__GAME_PIXEL_ART, 
-		backgroundColor: this.__GAME_BACKGROUND_COLOR, 
-		scene: this.__GAME_SCENES, 
+		type : this.__PHASER_TYPE, width : this.__GAME_WIDTH, height : this.__GAME_HEIGHT, 
+		parent : this.__PHASER_PARENT, pixelArt : this.__GAME_PIXEL_ART, backgroundColor : this.__GAME_BACKGROUND_COLOR, 
+		scene : this.__GAME_SCENES, 
 
-		scale: {
-
-			mode: this.__PHASER_SCALE_MODE, 
-			autoCenter: this.__PHASER_SCALE_AUTOCENTER, 
-
+		scale : {
+			mode : this.__PHASER_SCALE_MODE, 
+			autoCenter : this.__PHASER_SCALE_AUTOCENTER, 
 		}, 
 
-		physics: {
+		physics : {
 
-			default: this.__GAME_PHYSICS_DEFAULT, 
-			arcade: {
-				debug: true, 
-				gravity: {
-					y: this.__GAME_PHYSICS_GRAVITY, 
+			default : this.__GAME_PHYSICS_DEFAULT, 
+			arcade :  {
+				debug : true, 
+				gravity : {
+					y : this.__GAME_PHYSICS_GRAVITY, 
 				}, 
-				fps: this.__GAME_PHYSICS_FPS, 
+				fps : this.__GAME_PHYSICS_FPS, 
 			}
 
 		}
 
 	}
 
-	// Create FPS Counter
+		this.__m = new Mythirion ( 1 );
 
-	this.stats = new Stats ( );
+			this.p = new PlayerAnimations ( 1 );
 
-	// Append the FPS Counter to the DOM
+			this.stats = new Stats ( );
 
-	document.body.appendChild ( this.stats.dom );
-
-	// Start the Game with chosen Config
+		document.body.appendChild ( this.stats.dom );
 
 	this.__game = new Phaser.Game ( this.__config );
 
