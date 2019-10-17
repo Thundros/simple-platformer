@@ -15,7 +15,7 @@
 
 			<body>
 
-				<script src="../../../../ALL STUFF/THREEJS/ULTIMATE DEMO/STUFF THAT MATTERS/includes/libs/modules/phaser/3.20.0/fitoria/build/phaser.js"></script>
+				<script src="js/phaser.js"></script>
 				<script src="js/player.js"></script>
 				<script src="js/mouse-tile-maker.js"></script>
 				<script src="js/platformer-scene.js"></script>
