@@ -15,11 +15,11 @@
 
 			<body>
 
-				<script src="../../../../ALL STUFF/THREEJS/ULTIMATE DEMO/STUFF THAT MATTERS/includes/libs/modules/phaser/3.20.0/fitoria/build/phaser.js"></script>
-				<script src="js/player.js"></script>
-				<script src="js/mouse-tile-maker.js"></script>
-				<script src="js/platformer-scene.js"></script>
-				<script src="js/main.js"></script>
+				<script src="src/js/libs/modules/phaser/3.20.1/fitoria/build/phaser.js"></script>
+				<script src="src/js/libs/modules/stats/stats.min.js"></script>
+				<script src="src/js/player.js"></script>
+				<script src="src/js/platformer-scene.js"></script>
+				<script src="src/js/main.js"></script>
 
 			</body>
 
