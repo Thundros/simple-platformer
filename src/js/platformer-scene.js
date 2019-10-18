@@ -14,21 +14,15 @@
 
 			// Load our Player's spritesheet
 
-			this.load.spritesheet
-
+			this.load.spritesheet 
 			(
-
 				'player', 'assets/spritesheets/0x72-industrial-player-32px-extruded.png', 
-
 				{
-
 					frameWidth : 32, 
 					frameHeight : 32, 
 					margin : 1, 
 					spacing : 2, 
-
 				}
-
 			);
 
 			// Load Tileset
@@ -158,13 +152,12 @@
 			// Help text that has a "fixed" position on the screen
 
 			this.add.text( 10, 64, "Arrow/WASD to move & jump", {
-					font : "18px monospace", fill : "#000000", 
-					padding : {
-						x : 20, 
-						y : 10, 
-					}, backgroundColor : "#ffffff", 
-				}
-			).setScrollFactor ( 0 );
+				font : "18px monospace", fill : "#000000", 
+				padding : {
+					x : 20, 
+					y : 10, 
+				}, backgroundColor : "#ffffff", 
+			} ).setScrollFactor ( 0 );
 
 		}
 
@@ -188,15 +181,7 @@
 			// If the `player`'s Y-position is greater than the `groundLayer`'s
 			// height OR the `player` touches any of the spikes, 
 
-			if
-
-			( 
-
-				this.player.sprite.y > this.groundLayer.height
-
-			) 
-
-			{
+			if ( this.player.sprite.y > this.groundLayer.height ) {
 
 				// Flag that the player is dead so that we can stop update 
 				// from running in the future
@@ -221,9 +206,7 @@
 
 				// Once the Camera is done `fading`, 
 
-				cam.once ( "camerafadeoutcomplete", ( ) => 
-
-				{
+				cam.once ( "camerafadeoutcomplete", ( ) => {
 
 					// Destroy the `Player`'s memory from Game
 
