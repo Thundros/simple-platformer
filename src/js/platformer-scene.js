@@ -63,19 +63,13 @@
 
 				// Create our Tilemap
 
-			const map = this.make.tilemap
+			const map = this.make.tilemap ({
 
-			( 
+				// Set the Map's `ID key`
 
-				{
+				key : "tiles", 
 
-					// Set the Map's `ID key`
-
-					key : "tiles", 
-
-				}
-
-			);
+			});
 
 			// Set Camera's DeadZone Width
 
