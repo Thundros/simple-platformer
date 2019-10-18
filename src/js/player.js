@@ -25,9 +25,11 @@
 			this.__y = __y;
 
 			// Create the animations we need from the player spritesheet
+
 			this.__anims = this.__scene.anims;
 
 			// Player's `Idle` Animation
+
 			this.__anims.create(
 			{
 				key: "player-idle",
@@ -41,6 +43,7 @@
 			});
 
 			// Player's `Run` Animation
+
 			this.__anims.create(
 			{
 				key: "player-run",
