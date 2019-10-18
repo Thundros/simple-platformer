@@ -24,6 +24,35 @@
 
 			this.__y = __y;
 
+			// Create the animations we need from the player spritesheet
+			this.__anims = this.__scene.anims;
+
+			// Player's `Idle` Animation
+			this.__anims.create(
+			{
+				key: "player-idle",
+				frames: this.__anims.generateFrameNumbers("player",
+				{
+					start: 0,
+					end: 3
+				}),
+				frameRate: 3,
+				repeat: -1
+			});
+
+			// Player's `Run` Animation
+			this.__anims.create(
+			{
+				key: "player-run",
+				frames: this.__anims.generateFrameNumbers("player",
+				{
+					start: 8,
+					end: 15
+				}),
+				frameRate: 12,
+				repeat: -1
+			});
+
 			// Create the physics-based sprite that we will move 
 			// & animate
 

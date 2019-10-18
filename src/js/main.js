@@ -58,11 +58,7 @@
 
 	}
 
-		this.__m = new Mythirion ( 1 );
-
-			this.p = new PlayerAnimations ( 1 );
-
-			this.stats = new Stats ( );
+		this.stats = new Stats ( );
 
 		document.body.appendChild ( this.stats.dom );
 
