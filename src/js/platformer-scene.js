@@ -59,9 +59,9 @@
 
 			// Set whether or not the Player is dead { Default :: false }
 
-				this.isPlayerDead = false;
+			this.isPlayerDead = false;
 
-				// Create our Tilemap
+			// Create our Tilemap
 
 			const map = this.make.tilemap ({
 
@@ -157,32 +157,13 @@
 
 			// Help text that has a "fixed" position on the screen
 
-			this.add.text
-
-			( 
-
-				10, 64, "Arrow/WASD to move & jump", 
-
-				{
-
-					font : "18px monospace", 
-
-						fill : "#000000", 
-
-					padding : 
-
-					{
-
+			this.add.text( 10, 64, "Arrow/WASD to move & jump", {
+					font : "18px monospace", fill : "#000000", 
+					padding : {
 						x : 20, 
-
 						y : 10, 
-
-					}, 
-
-					backgroundColor : "#ffffff", 
-
+					}, backgroundColor : "#ffffff", 
 				}
-
 			).setScrollFactor ( 0 );
 
 		}
